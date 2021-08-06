@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgthree"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome 2 Android Learning.. "
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textInputLay_login_name"
+        android:textColorHint="#9C9C9E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:inputType="text"
+            android:maxLength="15"
+            android:visibility="visible"
+            android:background="@drawable/inputlay"
+            android:imeOptions="actionNext"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textInputLay_login_phNo"
+        android:textColorHint="#9C9C9E"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_login_phNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/inputlay"
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="Phone Number"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textInputLay_login_email"
+        android:textColorHint="#9C9C9E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputlay"
+            android:textColor="@android:color/white"
+            android:imeOptions="actionNext"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textInputLay_login_password"
+        android:textColorHint="#9C9C9E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:hint="Password"
+            android:background="@drawable/inputlay"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="35dp"
+        android:text="LogIn"
+        android:textColor="#090909"
+        android:id="@+id/btn_login_submit"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/facebook"/>
+            <Button
+                android:id="@+id/google"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/facebook"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/google"/>
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/google"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/twitter"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
